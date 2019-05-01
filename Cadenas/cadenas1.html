@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+   cadenas1.html
+   
+   Copyright 2019 Anxo Portela <anxo@zeus>
+   
+   This program is free software; you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation; either version 2 of the License, or
+   (at your option) any later version.
+   
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+   
+   You should have received a copy of the GNU General Public License
+   along with this program; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+   MA 02110-1301, USA.
+   
+   
+-->
+
+<head>
+<meta charset="utf-8" />
+<title>sin título</title>
+<meta name="generator" content="Geany 1.29" />
+</head>
+
+<body>
+</body>
+<script>
+var cadena1 = "Hola";
+var cadena2 = "Mundo";
+
+console.log(cadena1+cadena2);
+console.log((cadena1+cadena2).toUpperCase());
+console.log((cadena1+cadena2).toLowerCase());
+console.log(cadena1.charAt(0));
+console.log(cadena1.charAt(2));
+console.log(cadena1.substring(1));
+console.log(cadena2.charAt(0)+cadena1.substring(1));
+console.log(cadena1.substring(0, 2)+cadena2.substring(2, 4)+cadena1.substring(3));
+console.log((cadena1.substring(2, 4).toUpperCase())+(cadena2.substring(3, 5).toUpperCase()));
+console.log(cadena2.charAt(0)+cadena2.charAt(4)+cadena1.charAt(2)+cadena2.charAt(4)+cadena2.charAt(2)+cadena1.charAt(3));
+console.log(cadena1.charAt(0)+cadena2.charAt(1)+(cadena2.charAt(0).toLowerCase())+cadena1.charAt(3)+cadena2.charAt(2)+cadena2.charAt(3)+cadena2.charAt(4));
+console.log(cadena2.charAt(0)+cadena2.charAt(4)+cadena2.charAt(3)+cadena2.charAt(1)+cadena1.charAt(2)+cadena1.charAt(3)+cadena2.charAt(2));
+console.log(cadena2.charAt(0)+cadena2.charAt(4)+cadena1.charAt(2)+cadena1.charAt(3)+cadena2.charAt(2)+cadena2.charAt(3)+cadena2.charAt(4));
+</script>
+</html>
