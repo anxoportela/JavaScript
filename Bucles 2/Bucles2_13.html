@@ -56,13 +56,13 @@
 			alert("Los números introducidos tienen que estar entre 1 y 100");
 		} else {
 			for (var i = 0; i < numerosConPremio.length; i++) {
-				if (numerosConPremio[i] !== rifa[i]) {
+				if (numerosConPremio[i] != rifa[i]) {
 					premiado = false;
 				}
 			}
 		}
 	}
-	if (premiado = true) {
+	if (premiado) {
 		alert("Enhorabuena has ganado el 'TRIPLEX de la CARBALLEIRA'");
 	} else {
 		alert("Has fallado, intentalo otra vez")
