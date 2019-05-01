@@ -1,0 +1,61 @@
+<!--
+   Alumno: Anxo Portela-Insua Blanco
+   e-Mail: anxoportela@gmail.com
+   Fecha: 04/04/2019 - 17:52:42
+   Versión: 1.0
+   
+   sin título.html
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="utf-8" />
+<title>sin título</title>
+<meta name="generator" content="Geany 1.33" />
+<link rel="stylesheet" type="text/css" href="sin título.css">
+</head>
+
+<body>
+<table class="tftable" border="1">
+<tr><th>Nota Num</th><th>Nota Txt</th></tr>
+<tr id="md"><td>0-3</td><td>Muy deficiente</td></tr>
+<tr id="ins"><td>3-5</td><td>Insuficiente</td></tr>
+<tr id="suf"><td>5-6</td><td>Suficiente</td></tr>
+<tr id="bie"><td>6-7</td><td>Bien</td></tr>
+<tr id="not"><td>7-9</td><td>Notable</td></tr>
+<tr id="sob"><td>9-10</td><td>Sobresaliente</td></tr>
+</table>
+<br>
+<form>
+	Introduce tu nota <input onkeyup="notas()" type="number" id="num" /><br>
+</form>
+
+<script>
+function notas() {
+var nota = document.getElementById("num").value;
+
+if (nota < 3) {
+	document.getElementById("md").style.backgroundColor = "red";
+}
+else if (nota >= 3 && nota < 5) {
+	document.getElementById("ins").style.backgroundColor = "red";
+}
+else if (nota >= 5 && nota < 6) {
+	document.getElementById("suf").style.backgroundColor = "green";
+}
+else if (nota >= 6 && nota < 8) {
+	document.getElementById("bie").style.backgroundColor = "green";
+}
+else if (nota >= 8 && nota < 9) {
+	document.getElementById("not").style.backgroundColor = "green";
+}
+else {
+	document.getElementById("sob").style.backgroundColor = "green";
+}
+}
+</script>
+</body>
+
+</html>
