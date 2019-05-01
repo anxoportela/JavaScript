@@ -2,63 +2,58 @@
 <html lang="en">
 <!--
    Bucles2_9.html
-   
+
    Copyright 2019 Anxo Portela <anxo@zeus>
-   
+
    This program is free software; you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
    the Free Software Foundation; either version 2 of the License, or
    (at your option) any later version.
-   
+
    This program is distributed in the hope that it will be useful,
    but WITHOUT ANY WARRANTY; without even the implied warranty of
    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
    GNU General Public License for more details.
-   
+
    You should have received a copy of the GNU General Public License
    along with this program; if not, write to the Free Software
    Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
    MA 02110-1301, USA.
-   
-   
+
+
 -->
 
 <head>
-<meta charset="utf-8" />
-<title>sin título</title>
-<meta name="generator" content="Geany 1.29" />
+	<meta charset="utf-8" />
+	<title>sin título</title>
+	<meta name="generator" content="Geany 1.29" />
 </head>
 
 <body>
-<script>
-var contadorIntentos = 0;
-while (isNaN(num) == true || num < 10 || num > 100) {
-	var num = prompt("Introduce un número entre 10-100", "");
-	if (isNaN(num) == true) {
-		alert("Debes introducir un número");
-		contadorIntentos++;
-	}
-	else if (num < 10 || num > 100) {
-		alert("El número introducido tiene que estar entre 10 y 100");
-		contadorIntentos++;
-	}
-	else {
-		if (contadorIntentos <= 2) {
-			alert("Gracias por introducir un número entero");
-			break;
+	<script>
+		var contadorIntentos = 0;
+		while (isNaN(num) == true || num < 10 || num > 100) {
+			var num = prompt("Introduce un número entre 10-100", "");
+			if (isNaN(num) == true) {
+				alert("Debes introducir un número");
+				contadorIntentos++;
+			} else if (num < 10 || num > 100) {
+				alert("El número introducido tiene que estar entre 10 y 100");
+				contadorIntentos++;
+			} else {
+				if (contadorIntentos <= 2) {
+					alert("Gracias por introducir un número entero");
+					break;
+				} else if (contadorIntentos <= 5) {
+					alert("Apreciado humano, debe intentar ser más certero con el uso del teclado");
+					break;
+				} else {
+					alert("Por favor avise a un técnico para comprobar su teclado, y si este está en buen estado visite a la mayor brevedad a su oftalmólogo");
+					break;
+				}
+			}
 		}
-		else if (contadorIntentos <= 5) {
-			alert("Apreciado humano, debe intentar ser más certero con el uso del teclado");
-			break;
-		}
-		else {
-			alert("Por favor avise a un técnico para comprobar su teclado, y si este está en buen estado visite a la mayor brevedad a su oftalmólogo");
-			break;
-		}
-	}
-}	
-</script>
+	</script>
 </body>
 
 </html>
-
