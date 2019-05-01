@@ -3,7 +3,7 @@
    e-Mail: anxoportela@gmail.com
    Fecha: 04/04/2019 - 17:52:42
    Versión: 1.0
-   
+
    sin título.html
 -->
 
@@ -11,62 +11,76 @@
 <html lang="es">
 
 <head>
-<meta charset="utf-8" />
-<title>sin título</title>
-<meta name="generator" content="Geany 1.33" />
-<link rel="stylesheet" type="text/css" href="sin título.css">
+  <meta charset="utf-8" />
+  <title>sin título</title>
+  <meta name="generator" content="Geany 1.33" />
+  <link rel="stylesheet" type="text/css" href="sin título.css">
 </head>
 
 <body>
-<table class="tftable" border="1">
-	<tr><th>Nota Num</th><th>Nota Txt</th></tr>
-	<tr><td>0-3</td><td>Muy deficiente</td></tr>
-	<tr><td>3-5</td><td>Insuficiente</td></tr>
-	<tr><td>5-6</td><td>Suficiente</td></tr>
-	<tr><td>6-7</td><td>Bien</td></tr>
-	<tr><td>7-9</td><td>Notable</td></tr>
-	<tr><td>9-10</td><td>Sobresaliente</td></tr>
-</table>
-<br>
-<form>
-	Introduce tu nota <input onkeyup="notas()" type="text" id="num" /><br>
-</form>
+  <table class="tftable" border="1">
+    <tr>
+      <th>Nota Num</th>
+      <th>Nota Txt</th>
+    </tr>
+    <tr>
+      <td>0-3</td>
+      <td>Muy deficiente</td>
+    </tr>
+    <tr>
+      <td>3-5</td>
+      <td>Insuficiente</td>
+    </tr>
+    <tr>
+      <td>5-6</td>
+      <td>Suficiente</td>
+    </tr>
+    <tr>
+      <td>6-7</td>
+      <td>Bien</td>
+    </tr>
+    <tr>
+      <td>7-9</td>
+      <td>Notable</td>
+    </tr>
+    <tr>
+      <td>9-10</td>
+      <td>Sobresaliente</td>
+    </tr>
+  </table>
+  <br>
+  <form>
+    Introduce tu nota <input onkeyup="notas()" type="text" id="num" /><br>
+  </form>
 
-<script>
-function notas() {
-	var nota = document.getElementById("num").value;
-	var x = document.getElementsByTagName("TR");
-	var i;
-	for (i = 0; i < x.length; i++) {
-		x[i].style.backgroundColor = "white";
-	}
+  <script>
+    function notas() {
+      var nota = document.getElementById("num").value;
+      var x = document.getElementsByTagName("TR");
+      var i;
+      for (i = 0; i < x.length; i++) {
+        x[i].style.backgroundColor = "white";
+      }
 
-	if (isNaN(nota)) {
-		alert("Debes introducir un valor numérico");
-	}
-	else if (nota >= 0 && nota < 3 ) {
-		document.getElementsByTagName("TR")[1].style.backgroundColor = "red";
-	}
-	else if (nota >= 3 && nota < 5) {
-		document.getElementsByTagName("TR")[2].style.backgroundColor = "red";
-	}
-	else if (nota >= 5 && nota < 6) {
-		document.getElementsByTagName("TR")[3].style.backgroundColor = "yellow";
-	}
-	else if (nota >= 6 && nota < 8) {
-		document.getElementsByTagName("TR")[4].style.backgroundColor = "yellow";
-	}
-	else if (nota >= 8 && nota < 9) {
-		document.getElementsByTagName("TR")[5].style.backgroundColor = "green";
-	}
-	else if (nota >= 9 && nota <= 10){
-		document.getElementsByTagName("TR")[6].style.backgroundColor = "green";
-	}
-	else {
-		alert("Número fuera de rango");
-	}
-}
-</script>
+      if (isNaN(nota)) {
+        alert("Debes introducir un valor numérico");
+      } else if (nota >= 0 && nota < 3) {
+        document.getElementsByTagName("TR")[1].style.backgroundColor = "red";
+      } else if (nota >= 3 && nota < 5) {
+        document.getElementsByTagName("TR")[2].style.backgroundColor = "red";
+      } else if (nota >= 5 && nota < 6) {
+        document.getElementsByTagName("TR")[3].style.backgroundColor = "yellow";
+      } else if (nota >= 6 && nota < 8) {
+        document.getElementsByTagName("TR")[4].style.backgroundColor = "yellow";
+      } else if (nota >= 8 && nota < 9) {
+        document.getElementsByTagName("TR")[5].style.backgroundColor = "green";
+      } else if (nota >= 9 && nota <= 10) {
+        document.getElementsByTagName("TR")[6].style.backgroundColor = "green";
+      } else {
+        alert("Número fuera de rango");
+      }
+    }
+  </script>
 </body>
 
 </html>

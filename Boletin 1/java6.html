@@ -3,7 +3,7 @@
    e-Mail: anxoportela@gmail.com
    Fecha: 02/04/2019 - 18:19:00
    Versión: 1.0
-   
+
    sin título.html
 -->
 
@@ -11,28 +11,28 @@
 <html lang="es">
 
 <head>
-<meta charset="utf-8" />
-<title>sin título</title>
-<meta name="generator" content="Geany 1.33" />
-<link rel="stylesheet" type="text/css" href="sin título.css">
+  <meta charset="utf-8" />
+  <title>sin título</title>
+  <meta name="generator" content="Geany 1.33" />
+  <link rel="stylesheet" type="text/css" href="sin título.css">
 </head>
 
 <body>
-<form>
-	Número 1 <input type="number" id="num1" /><br>
-	Número 2 <input type="number" id="num2" /><br>
-</form>
-<button onclick="sumar()">Suma</button>
-<p id="num"></p>
+  <form>
+    Número 1 <input type="number" id="num1" /><br>
+    Número 2 <input type="number" id="num2" /><br>
+  </form>
+  <button onclick="sumar()">Suma</button>
+  <p id="num"></p>
 
-<script>
-function sumar() {
-var uno = document.getElementById("num1").value;
-var dos = document.getElementById("num2").value;
-var tres = parseInt(uno) + parseInt(dos);
-  alert("El resultado es " + tres);
-}
-</script>
+  <script>
+    function sumar() {
+      var uno = document.getElementById("num1").value;
+      var dos = document.getElementById("num2").value;
+      var tres = parseInt(uno) + parseInt(dos);
+      alert("El resultado es " + tres);
+    }
+  </script>
 </body>
 
 </html>
