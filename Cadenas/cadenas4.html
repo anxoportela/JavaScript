@@ -30,16 +30,16 @@
 </head>
 
 <body>
+	<script>
+		var texto = prompt("Introduce texto con espacios");
+		var palabras = texto.split(" ");
+		var cadena = [];
+		for (var i = 0; i < palabras.length; i += 2) {
+			cadena.push(palabras[i]);
+		}
+		var resultado = cadena.join("");
+		alert(resultado);
+	</script>
 </body>
-<script>
-	var texto = prompt("Introduce texto con espacios");
-	var palabras = texto.split(" ");
-	var cadena = [];
-	for (var i = 0; i < palabras.length; i += 2) {
-		cadena.push(palabras[i]);
-	}
-	var resultado = cadena.join("");
-	alert(resultado);
-</script>
 
 </html>

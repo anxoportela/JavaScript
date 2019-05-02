@@ -30,12 +30,12 @@
 </head>
 
 <body>
+  <script>
+    var texto = prompt("Introduce texto con espacios");
+    var palabras = texto.split(" ");
+    var sinespacios = palabras.join("").toUpperCase();
+    alert(sinespacios);
+  </script>
 </body>
-<script>
-  var texto = prompt("Introduce texto con espacios");
-  var palabras = texto.split(" ");
-  var sinespacios = palabras.join("").toUpperCase();
-  alert(sinespacios);
-</script>
 
 </html>

@@ -30,12 +30,11 @@
 </head>
 
 <body>
-
+  <script>
+    var texto = prompt("Introduce texto con espacios");
+    var cifrado = texto.replace(/a|á|A|Á/gi, "4").replace(/e|é|E|É/gi, "3").replace(/i|í|I|Í/gi, "1").replace(/o|ó|O|Ó/gi, "0").replace(/u|ú|U|Ú/gi, "7");
+    alert(cifrado);
+  </script>
 </body>
-<script>
-  var texto = prompt("Introduce texto con espacios");
-  var cifrado = texto.replace(/a|á|A|Á/gi, "4").replace(/e|é|E|É/gi, "3").replace(/i|í|I|Í/gi, "1").replace(/o|ó|O|Ó/gi, "0").replace(/u|ú|U|Ú/gi, "7");
-  alert(cifrado);
-</script>
 
 </html>

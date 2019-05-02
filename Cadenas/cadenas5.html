@@ -30,22 +30,22 @@
 </head>
 
 <body>
-</body>
-<script>
-	var texto = prompt("Introduce texto con espacios");
-	var palabras = texto.split(" ");
-	var cadena = [];
-	for (var i = 0; i < palabras.length; i++) {
-		var temp = "";
-		if (i % 2 === 0) {
-			temp += palabras[i].toUpperCase();
-		} else {
-			temp += palabras[i].toLowerCase();
+	<script>
+		var texto = prompt("Introduce texto con espacios");
+		var palabras = texto.split(" ");
+		var cadena = [];
+		for (var i = 0; i < palabras.length; i++) {
+			var temp = "";
+			if (i % 2 === 0) {
+				temp += palabras[i].toUpperCase();
+			} else {
+				temp += palabras[i].toLowerCase();
+			}
+			cadena.push(temp);
 		}
-		cadena.push(temp);
-	}
-	var resultado = cadena.join(" ");
-	alert(resultado);
-</script>
+		var resultado = cadena.join(" ");
+		alert(resultado);
+	</script>
+</body>
 
 </html>
