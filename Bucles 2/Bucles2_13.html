@@ -49,19 +49,19 @@
 		var numerosConPremio = numerosConPremio.sort();
 		var rifa = rifa.sort();
 		var premiado = true;
-		while (isNaN(num1) == true || isNaN(num2) == true || isNaN(num3) == true || (num1 < 1 || num1 > 100) || (num2 < 1 || num2 > 100) || (num3 < 1 || num3 > 100)) {
-			if (isNaN(num1) == true || isNaN(num2) == true || isNaN(num3) == true) {
-				alert("Debes introducir números");
-			} else if ((num1 < 1 || num1 > 100) || (num2 < 1 || num2 > 100) || (num3 < 1 || num3 > 100)) {
-				alert("Los números introducidos tienen que estar entre 1 y 100");
-			} else {
-				for (var i = 0; i < numerosConPremio.length; i++) {
-					if (numerosConPremio[i] != rifa[i]) {
-						premiado = false;
-					}
+		if (isNaN(num1) == true || isNaN(num2) == true || isNaN(num3) == true) {
+			alert("Debes introducir números");
+		} else if ((num1 < 1 || num1 > 100) || (num2 < 1 || num2 > 100) || (num3 < 1 || num3 > 100)) {
+			alert("Los números introducidos tienen que estar entre 1 y 100");
+		} else {
+			bandera = true;
+			for (var i = 0; i < numerosConPremio.length; i++) {
+				if (numerosConPremio[i] != rifa[i]) {
+					premiado = false;
 				}
 			}
 		}
+
 		if (premiado) {
 			alert("Enhorabuena has ganado el 'TRIPLEX de la CARBALLEIRA'");
 		} else {
