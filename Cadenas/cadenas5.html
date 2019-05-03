@@ -31,19 +31,19 @@
 
 <body>
 	<script>
-		var texto = prompt("Introduce texto con espacios");
-		var palabras = texto.split(" ");
-		var cadena = [];
-		for (var i = 0; i < palabras.length; i++) {
-			var temp = "";
-			if (i % 2 === 0) {
-				temp += palabras[i].toUpperCase();
-			} else {
-				temp += palabras[i].toLowerCase();
-			}
-			cadena.push(temp);
+		const texto = prompt('Introduce texto con espacios');
+		const palabras = texto.split(' ');
+		const cadena = [];
+		for (let i = 0; i < palabras.length; i++) {
+		  const temp = '';
+		  if (i % 2 === 0) {
+		    temp += palabras[i].toUpperCase();
+		  } else {
+		    temp += palabras[i].toLowerCase();
+		  }
+		  cadena.push(temp);
 		}
-		var resultado = cadena.join(" ");
+		const resultado = cadena.join(' ');
 		alert(resultado);
 	</script>
 </body>

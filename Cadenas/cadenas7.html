@@ -31,8 +31,8 @@
 
 <body>
   <script>
-    var texto = prompt("Introduce texto con espacios");
-    var cifrado = texto.split(/a|á|A|Á/gi).join("4").split(/e|é|E|É/gi).join("3").split(/i|í|I|Í/gi).join("1").split(/o|ó|O|Ó/gi).join("0").split(/u|ú|U|Ú/gi).join("7");
+    const texto = prompt('Introduce texto con espacios');
+    const cifrado = texto.split(/a|á|A|Á/gi).join('4').split(/e|é|E|É/gi).join('3').split(/i|í|I|Í/gi).join('1').split(/o|ó|O|Ó/gi).join('0').split(/u|ú|U|Ú/gi).join('7');
     alert(cifrado);
   </script>
 </body>

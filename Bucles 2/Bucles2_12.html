@@ -33,21 +33,21 @@
 	<h1 id="texto"></h1>
 
 	<script>
-		var numerosConPremio = [15, 27, 42];
-		document.getElementById("texto").innerHTML = "RIFA de la CARBALLEIRA";
+		const numerosConPremio = [15, 27, 42];
+		document.getElementById('texto').innerHTML = 'RIFA de la CARBALLEIRA';
 		while (isNaN(num) == true || num < 1 || num > 100) {
-			var num = prompt("Introduce un número entre 1-100", "");
-			if (isNaN(num) == true) {
-				alert("Debes introducir un número");
-			} else if (num < 1 || num > 100) {
-				alert("El número introducido tiene que estar entre 1 y 100");
-			} else {
-				for (var i = 0; i < numerosConPremio.length; i++) {
-					if (numerosConPremio[i] == num) {
-						alert("Enhorabuena has ganado la RIFA de la CARBALLEIRA");
-					}
-				}
-			}
+		  const num = prompt('Introduce un número entre 1-100', '');
+		  if (isNaN(num) == true) {
+		    alert('Debes introducir un número');
+		  } else if (num < 1 || num > 100) {
+		    alert('El número introducido tiene que estar entre 1 y 100');
+		  } else {
+		    for (let i = 0; i < numerosConPremio.length; i++) {
+		      if (numerosConPremio[i] == num) {
+		        alert('Enhorabuena has ganado la RIFA de la CARBALLEIRA');
+		      }
+		    }
+		  }
 		}
 	</script>
 </body>

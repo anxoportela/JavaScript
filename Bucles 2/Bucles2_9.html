@@ -31,27 +31,27 @@
 
 <body>
 	<script>
-		var contadorIntentos = 0;
+		let contadorIntentos = 0;
 		while (isNaN(num) == true || num < 10 || num > 100) {
-			var num = prompt("Introduce un número entre 10-100", "");
-			if (isNaN(num) == true) {
-				alert("Debes introducir un número");
-				contadorIntentos++;
-			} else if (num < 10 || num > 100) {
-				alert("El número introducido tiene que estar entre 10 y 100");
-				contadorIntentos++;
-			} else {
-				if (contadorIntentos <= 2) {
-					alert("Gracias por introducir un número entero");
-					break;
-				} else if (contadorIntentos <= 5) {
-					alert("Apreciado humano, debe intentar ser más certero con el uso del teclado");
-					break;
-				} else {
-					alert("Por favor avise a un técnico para comprobar su teclado, y si este está en buen estado visite a la mayor brevedad a su oftalmólogo");
-					break;
-				}
-			}
+		  const num = prompt('Introduce un número entre 10-100', '');
+		  if (isNaN(num) == true) {
+		    alert('Debes introducir un número');
+		    contadorIntentos++;
+		  } else if (num < 10 || num > 100) {
+		    alert('El número introducido tiene que estar entre 10 y 100');
+		    contadorIntentos++;
+		  } else {
+		    if (contadorIntentos <= 2) {
+		      alert('Gracias por introducir un número entero');
+		      break;
+		    } else if (contadorIntentos <= 5) {
+		      alert('Apreciado humano, debe intentar ser más certero con el uso del teclado');
+		      break;
+		    } else {
+		      alert('Por favor avise a un técnico para comprobar su teclado, y si este está en buen estado visite a la mayor brevedad a su oftalmólogo');
+		      break;
+		    }
+		  }
 		}
 	</script>
 </body>

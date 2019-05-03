@@ -31,13 +31,13 @@
 
 <body>
 	<script>
-		var texto = prompt("Introduce texto con espacios");
-		var palabras = texto.split(" ");
-		var cadena = [];
-		for (var i = 0; i < palabras.length; i++) {
-			cadena.push(palabras[i].charAt(0).toUpperCase() + palabras[i].slice(1));
+		const texto = prompt('Introduce texto con espacios');
+		const palabras = texto.split(' ');
+		const cadena = [];
+		for (let i = 0; i < palabras.length; i++) {
+		  cadena.push(palabras[i].charAt(0).toUpperCase() + palabras[i].slice(1));
 		}
-		var resultado = cadena.join(" ");
+		const resultado = cadena.join(' ');
 		alert(resultado);
 	</script>
 </body>

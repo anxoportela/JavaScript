@@ -31,24 +31,29 @@
 
 <body>
 	<script>
+		/**
+		 * Comprobar que un número es primo.
+		 * @param {numero} x Numero que se comprobará.
+		 * @returns {alerta} alert Informar si el número introducido es primo o no.
+		 */
 		function esPrimo(x) {
-			for (var i = 2; i < x; i++) {
-				if (x % i === 0)
-					return alert("El número no es primo");
-			}
-			return alert("El número es primo");
+		  for (let i = 2; i < x; i++) {
+		    if (x % i === 0) {
+		      return alert('El número no es primo');
+		    }
+		    return alert('El número es primo');
+		  }
 		}
-
 		while (isNaN(num) == true || num < 10 || num > 100) {
-			var num = prompt("Introduce un número entre 10-100", "");
-			if (isNaN(num) == true) {
-				alert("Debes introducir un número");
-			} else if (num < 10 || num > 100) {
-				alert("El número introducido tiene que estar entre 10 y 100");
-			} else {
-				esPrimo(num);
-				break;
-			}
+		  const num = prompt('Introduce un número entre 10-100', '');
+		  if (isNaN(num) == true) {
+		    alert('Debes introducir un número');
+		  } else if (num < 10 || num > 100) {
+		    alert('El número introducido tiene que estar entre 10 y 100');
+		  } else {
+		    esPrimo(num);
+		    break;
+		  }
 		}
 	</script>
 </body>

@@ -31,16 +31,16 @@
 
 <body>
 	<script>
-		for (var a = 0; a <= 100; a++) {
-			var noPrimo = false;
-			for (var b = 2; b < a; b++) {
-				if (a % b === 0) {
-					noPrimo = true;
-				}
-			}
-			if (noPrimo === false) {
-				console.log(a);
-			}
+		for (let a = 0; a <= 100; a++) {
+		  const noPrimo = false;
+		  for (let b = 2; b < a; b++) {
+		    if (a % b === 0) {
+		      noPrimo = true;
+		    }
+		  }
+		  if (noPrimo === false) {
+		    console.log(a);
+		  }
 		}
 	</script>
 </body>

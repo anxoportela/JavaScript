@@ -31,24 +31,28 @@
 
 <body>
 	<script>
+		/**
+		 * Comprobar que un número es par.
+		 * @param {numero} x Numero que se comprobará.
+		 * @returns {alerta} alert Informar si el número introducido es par o no.
+		 */
 		function esPar(x) {
-			if (x % 2 === 0) {
-				alert("El número es par");
-			} else {
-				alert("El número no es par");
-			}
+		  if (x % 2 === 0) {
+		    alert('El número es par');
+		  } else {
+		    alert('El número no es par');
+		  }
 		}
-
 		while (isNaN(num) == true || num < 10 || num > 100) {
-			var num = prompt("Introduce un número entre 10-100", "");
-			if (isNaN(num) == true) {
-				alert("Debes introducir un número");
-			} else if (num < 10 || num > 100) {
-				alert("El número introducido tiene que estar entre 10 y 100");
-			} else {
-				esPar(num);
-				break;
-			}
+		  const num = prompt('Introduce un número entre 10-100', '');
+		  if (isNaN(num) == true) {
+		    alert('Debes introducir un número');
+		  } else if (num < 10 || num > 100) {
+		    alert('El número introducido tiene que estar entre 10 y 100');
+		  } else {
+		    esPar(num);
+		    break;
+		  }
 		}
 	</script>
 </body>

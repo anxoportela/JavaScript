@@ -39,35 +39,35 @@
 	</p>
 
 	<script>
-		var numerosConPremio = [15, 27, 42];
-		var num = prompt("Introduce 3 números entre 1-100", "0,1,2");
-			num1 = num.split(",")[0],
-			num2 = num.split(",")[1],
-			num3 = num.split(",")[2];
-		var rifa = [];
+		const numerosConPremio = [15, 27, 42];
+		const num = prompt('Introduce 3 números entre 1-100', '0,1,2');
+		num1 = num.split(',')[0],
+		num2 = num.split(',')[1],
+		num3 = num.split(',')[2];
+		const rifa = [];
 		rifa.push(num1, num2, num3);
-		var numerosConPremio = numerosConPremio.sort();
-		var rifa = rifa.sort();
-		var premiado = true;
+		const numerosConPremioSort = numerosConPremio.sort();
+		const rifaSort = rifa.sort();
+		const premiado = true;
 		if (isNaN(num1) == true || isNaN(num2) == true || isNaN(num3) == true) {
-			alert("Debes introducir números");
+		  alert('Debes introducir números');
 		} else if ((num1 < 1 || num1 > 100) || (num2 < 1 || num2 > 100) || (num3 < 1 || num3 > 100)) {
-			alert("Los números introducidos tienen que estar entre 1 y 100");
+		  alert('Los números introducidos tienen que estar entre 1 y 100');
 		} else {
-			for (var i = 0; i < numerosConPremio.length; i++) {
-				if (numerosConPremio[i] != rifa[i]) {
-					premiado = false;
-				}
-			}
+		  for (let i = 0; i < numerosConPremioSort.length; i++) {
+		    if (numerosConPremioSort[i] != rifaSort[i]) {
+		      premiado = false;
+		    }
+		  }
 		}
 		if (premiado) {
-			alert("Enhorabuena has ganado el 'TRIPLEX de la CARBALLEIRA'");
+		  alert('Enhorabuena has ganado el \'TRIPLEX de la CARBALLEIRA\'');
 		} else {
-			alert("Has fallado, intentalo otra vez")
+		  alert('Has fallado, intentalo otra vez');
 		}
-		document.getElementById("texto").innerHTML = "RIFA de la CARBALLEIRA";
-		document.getElementById("misNumeros").innerHTML = rifa;
-		document.getElementById("numPremiados").innerHTML = numerosConPremio;
+		document.getElementById('texto').innerHTML = 'RIFA de la CARBALLEIRA';
+		document.getElementById('misNumeros').innerHTML = rifaSort;
+		document.getElementById('numPremiados').innerHTML = numerosConPremioSort;
 	</script>
 </body>
 

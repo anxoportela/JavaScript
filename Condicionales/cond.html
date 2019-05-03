@@ -1,14 +1,27 @@
-<!--
-   Alumno: Anxo Portela-Insua Blanco
-   e-Mail: anxoportela@gmail.com
-   Fecha: 09/04/2019 - 18:56:02
-   Versión: 1.0
-
-   sin título.html
--->
-
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+<!--
+   cond.html
+
+   Copyright 2019 Anxo Portela <anxo@zeus>
+
+   This program is free software; you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation; either version 2 of the License, or
+   (at your option) any later version.
+
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+
+   You should have received a copy of the GNU General Public License
+   along with this program; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+   MA 02110-1301, USA.
+
+
+-->
 
 <head>
   <meta charset="utf-8" />
@@ -19,58 +32,51 @@
 
 <body>
   <script>
-    var numero1 = 1;
-    var numero2 = 2;
-    var numero3 = 3;
-    var dia = 3;
-    var bandera = true;
-    var hola = "Hola";
-    var adios = "Adios";
-
+    const numero1 = 1;
+    const numero2 = 2;
+    const numero3 = 3;
+    const dia = 3;
+    const bandera = true;
+    const hola = 'Hola';
+    const adios = 'Adios';
     if (numero2 > numero1) {
-      alert("Numero2 es mayor que Numero1");
+      alert('Numero2 es mayor que Numero1');
     }
-
     if (numero2 > numero1 && bandera == true) {
-      alert("Numero2 es mayor que Numero1 y la bandera es cierta");
+      alert('Numero2 es mayor que Numero1 y la bandera es cierta');
     }
-
     if (numero1 + numero2 == numero3) {
-      alert("Numero1 + Numero2 = Numero3");
+      alert('Numero1 + Numero2 = Numero3');
     }
-
     if (numero2 >= numero3) {
-      alert("Este texto no aparecerá");
+      alert('Este texto no aparecerá');
     } else {
-      alert("Numero2 no es mayor o igual que Numero3");
+      alert('Numero2 no es mayor o igual que Numero3');
     }
-
     if (!bandera == false) {
-      alert("No cierto es igual a falso");
+      alert('No cierto es igual a falso');
     }
-
     if (adios > hola) {
-      alert("Este texto no se mostrará");
+      alert('Este texto no se mostrará');
     } else {
-      alert("Siguiendo el orden alfabético el texto ‘hola’ está después del texto ‘adios’ y por lo tanto es ‘mayor’ que él");
+      alert('Siguiendo el orden alfabético el texto ‘hola’ está después del texto ‘adios’ y por lo tanto es ‘mayor’ que él');
     }
-
     if (dia == 1) {
-      alert("Es Lunes");
+      alert('Es Lunes');
     } else if (dia == 2) {
-      alert("Es Martes");
+      alert('Es Martes');
     } else if (dia == 3) {
-      alert("Es Miércoles");
+      alert('Es Miércoles');
     } else if (dia == 4) {
-      alert("Es Jueves");
+      alert('Es Jueves');
     } else if (dia == 5) {
-      alert("Es Viernes");
+      alert('Es Viernes');
     } else if (dia == 6) {
-      alert("Es Sábado");
+      alert('Es Sábado');
     } else if (dia == 7) {
-      alert("Es Domingo");
+      alert('Es Domingo');
     } else {
-      alert("Fuera de rango");
+      alert('Fuera de rango');
     }
   </script>
 </body>
