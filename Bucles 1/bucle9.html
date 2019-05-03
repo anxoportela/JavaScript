@@ -31,13 +31,14 @@
 
 <body>
   <script>
-    var precios = [12, 27, 34, 62, 11, 15, 17];
-    var precios = precios.filter(function(x) {
+    const precios = [12, 27, 34, 62, 11, 15, 17];
+    const preciosfilt = precios.filter(function(x) {
       return x > 15;
     });
-    var i;
-    for (i in precios) {
-      console.log(precios[i]);
+    for (i in preciosfilt) {
+      if (preciosfilt.hasOwnProperty(i)) {
+        console.log(precios[i]);
+      }
     }
   </script>
 </body>

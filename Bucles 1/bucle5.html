@@ -31,10 +31,12 @@
 
 <body>
 	<script>
-		var meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
-		var i;
+		const meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+		let i;
 		for (i in meses) {
-			console.log(meses[i]);
+		  if (meses.hasOwnProperty(i)) {
+		    console.log(meses[i]);
+		  }
 		}
 	</script>
 </body>

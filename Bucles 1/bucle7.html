@@ -31,10 +31,12 @@
 
 <body>
 	<script>
-		var meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
-		var meses = meses.reverse();
-		for (i in meses) {
-			console.log(meses[i]);
+		const meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+		const mesesrv = meses.reverse();
+		for (i in mesesrv) {
+		  if (mesesrv.hasOwnProperty(i)) {
+		    console.log(meses[i]);
+		  }
 		}
 	</script>
 </body>

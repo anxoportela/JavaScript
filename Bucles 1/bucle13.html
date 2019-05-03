@@ -31,11 +31,11 @@
 
 <body>
   <script>
-    var precios = [12, 27, 34, 62, 11, 15, 17];
-    var suma = precios.reduce(function(a, b) {
+    const precios = [12, 27, 34, 62, 11, 15, 17];
+    const suma = precios.reduce(function(a, b) {
       return a + b;
     }, 0);
-    var media = suma / precios.length;
+    const media = suma / precios.length;
     console.log(media);
   </script>
 </body>
