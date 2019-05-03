@@ -1,14 +1,27 @@
-<!--
-   Alumno: Anxo Portela-Insua Blanco
-   e-Mail: anxoportela@gmail.com
-   Fecha: 04/04/2019 - 17:52:42
-   Versión: 1.0
-
-   java16.html
--->
-
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+<!--
+   java16.html
+
+   Copyright 2019 Anxo Portela <anxo@zeus>
+
+   This program is free software; you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation; either version 2 of the License, or
+   (at your option) any later version.
+
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+
+   You should have received a copy of the GNU General Public License
+   along with this program; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+   MA 02110-1301, USA.
+
+
+-->
 
 <head>
   <meta charset="utf-8" />
@@ -54,27 +67,31 @@
   </form>
 
   <script>
+    /**
+     * Cambiar estilo de fuente.
+     * @param {numero} nota Nota numérica obtenida en la página web.
+     * @returns {estilo} style Estilo aplicado a la nota.
+     */
     function notas() {
-      var nota = document.getElementById("num").value;
-      var x = document.getElementsByTagName("TR");
-      var i;
-      for (i = 0; i < x.length; i++) {
-        x[i].style.backgroundColor = "white";
+      const nota = document.getElement('num').value;
+      const x = document.getElementsByTagName('TR');
+      for (let i = 0; i < x.length; i++) {
+        x[i].style.backgroundColor = 'white';
       }
       if (nota >= 0 && nota < 3) {
-        document.getElementsByTagName("TR")[1].style.backgroundColor = "red";
+        document.getElementsByTagName('TR')[1].style.backgroundColor = 'red';
       } else if (nota >= 3 && nota < 5) {
-        document.getElementsByTagName("TR")[2].style.backgroundColor = "red";
+        document.getElementsByTagName('TR')[2].style.backgroundColor = 'red';
       } else if (nota >= 5 && nota < 6) {
-        document.getElementsByTagName("TR")[3].style.backgroundColor = "yellow";
+        document.getElementsByTagName('TR')[3].style.backgroundColor = 'yellow';
       } else if (nota >= 6 && nota < 8) {
-        document.getElementsByTagName("TR")[4].style.backgroundColor = "yellow";
+        document.getElementsByTagName('TR')[4].style.backgroundColor = 'yellow';
       } else if (nota >= 8 && nota < 9) {
-        document.getElementsByTagName("TR")[5].style.backgroundColor = "green";
+        document.getElementsByTagName('TR')[5].style.backgroundColor = 'green';
       } else if (nota >= 9 && nota <= 10) {
-        document.getElementsByTagName("TR")[6].style.backgroundColor = "green";
+        document.getElementsByTagName('TR')[6].style.backgroundColor = 'green';
       } else {
-        alert("Número fuera de rango");
+        alert('Número fuera de rango');
       }
     }
   </script>

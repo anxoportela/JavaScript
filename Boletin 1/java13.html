@@ -1,14 +1,27 @@
-<!--
-   Alumno: Anxo Portela-Insua Blanco
-   e-Mail: anxoportela@gmail.com
-   Fecha: 04/04/2019 - 17:52:42
-   Versión: 1.0
-
-   java13.html
--->
-
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+<!--
+   java13.html
+
+   Copyright 2019 Anxo Portela <anxo@zeus>
+
+   This program is free software; you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation; either version 2 of the License, or
+   (at your option) any later version.
+
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+
+   You should have received a copy of the GNU General Public License
+   along with this program; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+   MA 02110-1301, USA.
+
+
+-->
 
 <head>
   <meta charset="utf-8" />
@@ -55,21 +68,25 @@
   <button onclick="notas()">Nota</button>
 
   <script>
+    /**
+     * Cambiar estilo de fuente.
+     * @param {numero} nota Nota numérica obtenida de la página web.
+     * @returns {estilo} style Estilo aplicado a la nota.
+     */
     function notas() {
-      var nota = document.getElementById("num").value;
-
+      const nota = document.getElementById('num').value;
       if (nota < 3) {
-        document.getElementById("md").style.fontWeight = "bold";
+        document.getElementById('md').style.fontWeight = 'bold';
       } else if (nota >= 3 && nota < 5) {
-        document.getElementById("ins").style.fontWeight = "bold";
+        document.getElementById('ins').style.fontWeight = 'bold';
       } else if (nota >= 5 && nota < 6) {
-        document.getElementById("suf").style.fontWeight = "bold";
+        document.getElementById('suf').style.fontWeight = 'bold';
       } else if (nota >= 6 && nota < 8) {
-        document.getElementById("bie").style.fontWeight = "bold";
+        document.getElementById('bie').style.fontWeight = 'bold';
       } else if (nota >= 8 && nota < 9) {
-        document.getElementById("not").style.fontWeight = "bold";
+        document.getElementById('not').style.fontWeight = 'bold';
       } else {
-        document.getElementById("sob").style.fontWeight = "bold";
+        document.getElementById('sob').style.fontWeight = 'bold';
       }
     }
   </script>
