@@ -44,7 +44,8 @@
      */
     function notas() {
       const nota = document.getElementById('num').value;
-      const notatxt = ['Muy Deficiente', 'Insuficiente', 'Suficiente', 'Bien', 'Notable', 'Sobresaliente'];
+      const notatxt = ['Muy Deficiente', 'Insuficiente', 'Suficiente',
+        'Bien', 'Notable', 'Sobresaliente'];
       if (nota < 3) {
         window.alert(notatxt[0]);
       } else if (nota >= 3 && nota < 5) {

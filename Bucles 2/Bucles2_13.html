@@ -48,13 +48,14 @@
 		rifa.push(num1, num2, num3);
 		const numerosConPremioSort = numerosConPremio.sort();
 		const rifaSort = rifa.sort();
-		const premiado = true;
+		let premiado = true;
 		if (isNaN(num1) == true || isNaN(num2) == true || isNaN(num3) == true) {
 		  alert('Debes introducir números');
-		} else if ((num1 < 1 || num1 > 100) || (num2 < 1 || num2 > 100) || (num3 < 1 || num3 > 100)) {
+		} else if ((num1 < 1 || num1 > 100) || (num2 < 1 || num2 > 100) ||
+		(num3 < 1 || num3 > 100)) {
 		  alert('Los números introducidos tienen que estar entre 1 y 100');
 		} else {
-		  for (let i = 0; i < numerosConPremioSort.length; i++) {
+		  for (i = 0; i < numerosConPremioSort.length; i++) {
 		    if (numerosConPremioSort[i] != rifaSort[i]) {
 		      premiado = false;
 		    }
