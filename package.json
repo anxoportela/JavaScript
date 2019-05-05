@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "SMR APWEB JavaScript",
   "main": "README.md",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/anxoportela/JavaScript.git"
