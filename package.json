@@ -1,8 +1,8 @@
 {
-  "name": "javascript",
+  "name": "Javascript",
   "version": "1.0.0",
-  "description": "SMRA2 APWEB JavaScript",
-  "main": "index.js",
+  "description": "SMR APWEB JavaScript",
+  "main": "README.md",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,8 +10,8 @@
     "type": "git",
     "url": "git+https://github.com/anxoportela/JavaScript.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Anxo Portela-Insua Blanco",
+  "license": "GPLv2",
   "bugs": {
     "url": "https://github.com/anxoportela/JavaScript/issues"
   },
