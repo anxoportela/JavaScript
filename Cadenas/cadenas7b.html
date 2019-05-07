@@ -32,7 +32,11 @@
 <body>
   <script>
     const texto = prompt('Introduce texto con espacios');
-    const cifrado = texto.replace(/a|á|A|Á/gi, '4').replace(/e|é|E|É/gi, '3').replace(/i|í|I|Í/gi, '1').replace(/o|ó|O|Ó/gi, '0').replace(/u|ú|U|Ú/gi, '7');
+    let cifrado = texto.replace(/a|á|A|Á/gi, '4');
+    cifrado = cifrado.replace(/e|é|E|É/gi, '3');
+    cifrado = cifrado.replace(/i|í|I|Í/gi, '1');
+    cifrado = cifrado.replace(/o|ó|O|Ó/gi, '0');
+    cifrado = cifrado.replace(/u|ú|U|Ú/gi, '7');
     alert(cifrado);
   </script>
 </body>
