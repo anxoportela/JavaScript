@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  Hoy es martes, 5 de enero de 2013 y son las 14:32 horas.
+  <p id="fecha"></p>
+  <script>
+    const opcionesDia = {
+      weekday: 'long',
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+    };
+    const opcionesHora = {
+      weekday: 'none',
+      year: 'none',
+      month: 'none',
+      day: 'none',
+      hour: 'numeric',
+      minute: 'numeric',
+    };
+    const fecha = new Date();
+    const fechaEs = fecha.toLocaleDateString('es-ES', opcionesDia);
+    const hora = new Date();
+    const horaEs = hora.toLocaleDateString('es-ES', opcionesHora);
+    console.log(fechaEs + horaEs);
+  </script>
+</body>
+
+</html>
