@@ -9,7 +9,6 @@
 </head>
 
 <body>
-  <h2 id="fecha"></h2>
   <script>
     const opcionesDia = {
       weekday: 'long',
@@ -19,17 +18,13 @@
     };
     const fecha = new Date();
     const fechaEs = fecha.toLocaleDateString('es-ES', opcionesDia);
-    let hora = fecha.getHours();
-    let min = fecha.getMinutes();
-    if ((min >= 0) && (min < 10)) {
-      min = '0' + min;
-    }
-    if ((hora >= 0) && (hora < 10)) {
-      hora = '0' + hora;
-    }
-    console.log('Hoy es ' + fechaEs + ' y son las ' + hora + ':' + min + ' horas');
-    document.getElementById('fecha').innerHTML = 'Hoy es ' + fechaEs +
-      ' y son las ' + hora + ':' + min + ' horas';
+    const diasemana = fechaEs.getDay();
+    const diames = fechaEs.getDate();
+    const mes = fechaEs.getMonth();
+    let fechainicio = new Date();
+    fechainicio = fechainicio.setFullYear(2014, 1, 1);
+    let fechafinal = new Date();
+    fechafinal = fechafinal.setFullYear(2050, 31, 12);
   </script>
 </body>
 
