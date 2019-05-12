@@ -10,17 +10,10 @@
 
 <body>
   <script>
-    const opcionesDia = {
-      weekday: 'long',
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric',
-    };
     const fecha = new Date();
-    const fechaEs = fecha.toLocaleDateString('es-ES', opcionesDia);
-    const diasemana = fechaEs.getDay();
-    const diames = fechaEs.getDate();
-    const mes = fechaEs.getMonth();
+    const diasemana = fecha.getDay();
+    const diames = fecha.getDate();
+    const mes = fecha.getMonth();
     let fechainicio = new Date();
     fechainicio = fechainicio.setFullYear(2014, 1, 1);
     let fechafinal = new Date();
