@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script type="text/javascript">
+    const fechaInicial = prompt('Introduce la fecha Inicial', '1/1/2019');
+    fechaInicial1 = fechaInicial.split('/')[0],
+    fechaInicial2 = fechaInicial.split('/')[1],
+    fechaInicial3 = fechaInicial.split('/')[2];
+    const fechaFinal = prompt('Introduce la fecha Final', '31/12/2019');
+    fechaFinal1 = fechaFinal.split('/')[0],
+    fechaFinal2 = fechaFinal.split('/')[1],
+    fechaFinal3 = fechaFinal.split('/')[2];
+    const unDia = 24 * 60 * 60 * 1000;
+    const fechaA = new Date(fechaInicial3, fechaInicial2, fechaInicial1);
+    const fechaB = new Date(fechaFinal3, fechaFinal2, fechaFinal1);
+    let diasResto = (fechaB - fechaA) / unDia;
+    diasResto = Math.round(Math.abs(diasResto));
+    alert(diasResto);
+  </script>
+</body>
+
+</html>

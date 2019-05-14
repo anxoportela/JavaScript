@@ -10,14 +10,14 @@
 
 <body>
   <script>
-    const fecha = new Date();
-    const diasemana = fecha.getDay();
-    const diames = fecha.getDate();
-    const mes = fecha.getMonth();
-    let fechainicio = new Date();
-    fechainicio = fechainicio.setFullYear(2014, 1, 1);
-    let fechafinal = new Date();
-    fechafinal = fechafinal.setFullYear(2050, 31, 12);
+    for (i = 2014; i <= 2050; i++) {
+      const fecha = new Date();
+      fecha.setFullYear(i, 1, 1);
+      const fechadia = fecha.getDay();
+      if (fechadia == 0) {
+        console.log(i);
+      }
+    }
   </script>
 </body>
 

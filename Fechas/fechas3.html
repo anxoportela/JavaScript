@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script type="text/javascript">
+    const unDia = 24 * 60 * 60 * 1000;
+    const fecha = new Date();
+    const navidad = new Date(2019, 12, 25);
+    let diasRestantes = (navidad - fecha) / unDia;
+    diasRestantes = Math.round(Math.abs(diasRestantes));
+    console.log(diasRestantes);
+  </script>
+</body>
+
+</html>
