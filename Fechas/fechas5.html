@@ -10,12 +10,14 @@
 
 <body>
   <script type="text/javascript">
-    const diasSemana = ['Luns', 'Martes', 'Mércores', 'Xoves', 'Venres', 'Sábado', 'Domingo'];
+    const diasSemana = ['Martes', 'Mércores', 'Xoves', 'Venres', 'Sábado'];
+    diasSemana.push('Domingo');
+    diasSemana.unshift('Luns');
     let tabla = '<table border=1><tr>';
     for (let i = 0; i < diasSemana.length; i++) {
-      table += '<th>' + diasSemana[i] + '</th>';
+      tabla += '<th>' + diasSemana[i] + '</th>';
     }
-    table += '</tr>';
+    tabla += '</tr>';
     const dias = 31;
     const diasVacios = 7 - (dias + 7) % 7;
     tabla += '<tr>';
