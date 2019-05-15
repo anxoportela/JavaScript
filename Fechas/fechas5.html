@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script type="text/javascript">
+    const diasSemana = ['Luns', 'Martes', 'Mércores', 'Xoves', 'Venres', 'Sábado', 'Domingo'];
+    let tabla = '<table border=1><tr>';
+    for (let i = 0; i < diasSemana.length; i++) {
+      table += '<th>' + diasSemana[i] + '</th>';
+    }
+    table += '</tr>';
+    const dias = 31;
+    const diasVacios = 7 - (dias + 7) % 7;
+    tabla += '<tr>';
+    for (let i = 1; i <= dias; i++) {
+      tabla += '<td>' + i + '</td>';
+      if (i % 7 === 0) tabla += '</tr><tr>';
+    }
+    for (let i = 0; i < diasVacios; i++) {
+      tabla += '<td></td>';
+    }
+    tabla += '</tr></table>';
+    document.body.innerHTML = tabla;
+  </script>
+</body>
+
+</html>
