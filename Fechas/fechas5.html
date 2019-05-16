@@ -21,7 +21,7 @@
     const fecha = new Date();
     const ano = fecha.getFullYear();
     const mes = fecha.getMonth();
-    const dias = new Date(ano, mes, 0).getDate() + 1;
+    const dias = new Date(ano, mes + 1, 0).getDate();
     const diasemana = new Date(ano, mes, 1).getDay() + 7 % 7;
     vacias = 0;
     tabla += '<tr>';
