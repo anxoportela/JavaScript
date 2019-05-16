@@ -21,13 +21,15 @@
     const fecha = new Date();
     const ano = fecha.getFullYear();
     const mes = fecha.getMonth();
-    const dias = new Date(ano, mes, 0).getDate();
+    const dias = new Date(ano, mes, 0).getDate() + 1;
     const diasemana = new Date(ano, mes, 1).getDay() + 7 % 7;
+    vacias = 0;
     tabla += '<tr>';
     for (let i = 1; i <= 35; i++) {
-      if (i >= diasemana && i < dias) {
-        tabla += '<td>' + i - diasemana + 1 + '</td>';
+      if (i >= diasemana && i <= dias + vacias) {
+        tabla += '<td>' + (i - diasemana + 1) + '</td>';
       } else {
+        vacias += 1;
         tabla += '<td></td>';
       }
       if (i % 7 === 0) tabla += '</tr><tr>';
@@ -35,7 +37,6 @@
 
     tabla += '</tr></table>';
     document.body.innerHTML = tabla;
-    console.log(diasemana);
   </script>
 </body>
 
