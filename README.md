@@ -10,6 +10,7 @@ Ejercicios SMR APWEB JavaScript
 -   [Cadenas](Cadenas/Boletin_Cadenas.pdf)
 -   [Condicionales](Condicionales/Boletin_Condicionales.pdf)
 -   [Variables y Operadores](Variables_y_Operadores/Boletin_Repaso_Variables_y_Operaciones_Aritmeticas.pdf)
+-   [Fechas](Fechas/Boletin-Fechas.pdf)
 
 ## Soluciones
 
@@ -19,3 +20,4 @@ Ejercicios SMR APWEB JavaScript
 -   [Cadenas](Cadenas/)
 -   [Condicionales](Condicionales/)
 -   [Variables y Operadores](Variables_y_Operadores/)
+-   [Fechas](Fechas/)
