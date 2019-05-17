@@ -15,7 +15,8 @@
     const navidad = new Date(2019, 12, 25);
     let diasRestantes = (navidad - fecha) / unDia;
     diasRestantes = Math.round(Math.abs(diasRestantes));
-    console.log(diasRestantes);
+    document.body.innerHTML = '<h2>Faltan ' + diasRestantes +
+      ' días hasta Navidad</h2>';
   </script>
 </body>
 

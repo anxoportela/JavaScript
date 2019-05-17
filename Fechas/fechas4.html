@@ -23,7 +23,8 @@
     const fechaB = new Date(fechaFinal3, fechaFinal2, fechaFinal1);
     let diasResto = (fechaB - fechaA) / unDia;
     diasResto = Math.round(Math.abs(diasResto));
-    alert(diasResto);
+    document.body.innerHTML = '<h2>Hay una diferencia de ' + diasResto +
+      ' días</h2>';
   </script>
 </body>
 
