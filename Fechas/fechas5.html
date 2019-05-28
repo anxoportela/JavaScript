@@ -25,10 +25,10 @@
     const diasemana = new Date(ano, mes, 1).getDay() + 7 % 7;
     vacias = 0;
     tabla += '<tr>';
-    for (let i = 1; i <= 35; i++) {
+    for (let i = 1; i <= 42; i++) {
       if (i >= diasemana && i <= dias + vacias) {
         tabla += '<td>' + (i - diasemana + 1) + '</td>';
-      } else {
+      } else if (i <= dias + vacias) {
         vacias += 1;
         tabla += '<td></td>';
       }
