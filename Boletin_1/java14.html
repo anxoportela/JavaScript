@@ -68,7 +68,7 @@
 
   <script>
     function notas() {
-      const nota = document.getElement('num').value;
+      const nota = document.getElementById('num').value;
       if (nota < 3) {
         document.getElementById('md').style.backgroundColor = 'red';
       } else if (nota >= 3 && nota < 5) {
