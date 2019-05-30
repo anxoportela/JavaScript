@@ -13,7 +13,7 @@
     const diasSemana = ['Martes', 'Mércores', 'Xoves', 'Venres', 'Sábado'];
     diasSemana.unshift('Luns');
     diasSemana.push('Domingo');
-    let tabla = '<table border=1><tr>';
+    let tabla = '<table border="1"><tr>';
     for (let i = 0; i < diasSemana.length; i++) {
       tabla += '<th>' + diasSemana[i] + '</th>';
     }
@@ -32,9 +32,9 @@
         vacias += 1;
         tabla += '<td></td>';
       }
-      if (i % 7 === 0) tabla += '</tr><tr>';
+      if (i % 7 === 0) tabla += '</tr>';
     }
-    tabla += '</tr></table>';
+    tabla += '</table>';
     document.body.innerHTML = tabla;
   </script>
 </body>
