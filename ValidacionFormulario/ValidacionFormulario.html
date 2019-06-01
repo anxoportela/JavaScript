@@ -1,214 +1,224 @@
 <!DOCTYPE html>
 <html>
-	<head>	
-		<meta charset="utf-8">
-		<title>Formulario de validación</title>
-	    <script defer src="ValidacionFormulario.js"></script>
-		<style>
-		
-			* {
-				box-sizing: border-box;
-			}
 
-			body{
-				font-family: Lato, San Serif;
-				font-size: 14px;
-				background: LightSlateGray;
-			}
-			
-			h1{
-				font-size: 2em;
-				color: DeepSkyBlue;
-			}
-			
-			div#contenedor{
-				width: 70%;
-				max-width: 1000px;
-				margin: 0 auto;
-				border-radius: 10px;
-				padding: 20px 30px;
-				background-color: AliceBlue;
-			}
-			
-			label {
-				width:20%;
-				margin:18px 4% 18px 0;
-				display:inline-block;
-				font-weight: bold;
-				vertical-align: top;
-			}
-			
-			input, textarea, select{
-				padding: 10px;
-				border: none;
-				width: 40%;	
-				margin: 5px;
-			}
-			
-			input[type="radio"]{
-				width: 30px;
-			}
-			
-			input[type="reset"],input[type="submit"], input[type="submit"]:valid{
-				background: DodgerBlue;
-				color: #fff;	
-				margin: auto;
-				padding: 10px 30px;
-				font-size: 1.1em;
-				border: 1px solid #888888!important;
-				width: 29%;
-				margin: 20px 2% 10px 2%;
-			}
-			
-			input[type="reset"]:active, input[type="submit"]:active{
-				transform: scale(1.05);
-			}
-				
-			
-			/*Estilos a partires daquí*/
-			
-			label.check{
-				width: 100%;
-				margin: 1%;
-			}
-			label.check span{
-				display: inline-block;
-				width: 30%;
-				min-width: 110px;
-				max-width: 125px;
-				font-weight: normal;
-			}
-			
-			label.check input{
-				width: 20%;				
-			}
-			
-			input, textarea, select{
-				border-bottom: 2px solid #7A7A7A;
-			}
-			
-			input::placeholder, textarea::placeholder{
-				font-size: 95%;
-			}
+<head>
+	<meta charset="utf-8">
+	<title>Formulario de validación</title>
+	<script defer src="ValidacionFormulario.js"></script>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
 
-			input:hover, textarea:hover, select:hover{
-				border-bottom-color: #000000;
-			}
-			
-			input:required, textarea:required, select:required{
-				border-bottom-color: Crimson;
-			}
-			
-			input:optional, textarea:optional, select:optional{
-				border-bottom-color: LimeGreen;
-			}
-		
-			input:required::placeholder, textarea:required::placeholder{
-				color: IndianRed;
-			}
-			
-			input:optional::placeholder, textarea:optional::placeholder{
-				color: SeaGreen;
-			}
-			
-			input:invalid, textarea:invalid, select:invalid {
-				background-color: LightPink;
-			}
-			 
-			input:valid, textarea:valid, select:valid {
-				background-color: LightGreen;
-			}
-			
-			input:read-only{
-				background-color: Ivory;
-			}
-			
-			input[type="text"]:-moz-read-only {
-				background-color: Ivory;
-			}
-			
-			input:disabled {
-				background-color: DarkGray;
-				border-bottom-color: DarkGray;
-			}
-			
-			input:disabled::placeholder {
-				color: Silver;
-			}
-			
-			/*Columnas*/
-			
-					
-		
-		</style>
-	</head>
-    <body>
-		<div id="contenedor">
-    
+		body {
+			font-family: Lato, San Serif;
+			font-size: 14px;
+			background: LightSlateGray;
+		}
+
+		h1 {
+			font-size: 2em;
+			color: DeepSkyBlue;
+		}
+
+		div#contenedor {
+			width: 70%;
+			max-width: 1000px;
+			margin: 0 auto;
+			border-radius: 10px;
+			padding: 20px 30px;
+			background-color: AliceBlue;
+		}
+
+		label {
+			width: 20%;
+			margin: 18px 4% 18px 0;
+			display: inline-block;
+			font-weight: bold;
+			vertical-align: top;
+		}
+
+		input,
+		textarea,
+		select {
+			padding: 10px;
+			border: none;
+			width: 40%;
+			margin: 5px;
+		}
+
+		input[type="radio"] {
+			width: 30px;
+		}
+
+		input[type="reset"],
+		input[type="submit"],
+		input[type="submit"]:valid {
+			background: DodgerBlue;
+			color: #fff;
+			margin: auto;
+			padding: 10px 30px;
+			font-size: 1.1em;
+			border: 1px solid #888888 !important;
+			width: 29%;
+			margin: 20px 2% 10px 2%;
+		}
+
+		input[type="reset"]:active,
+		input[type="submit"]:active {
+			transform: scale(1.05);
+		}
+
+
+		/*Estilos a partires daquí*/
+
+		label.check {
+			width: 100%;
+			margin: 1%;
+		}
+
+		label.check span {
+			display: inline-block;
+			width: 30%;
+			min-width: 110px;
+			max-width: 125px;
+			font-weight: normal;
+		}
+
+		label.check input {
+			width: 20%;
+		}
+
+		input,
+		textarea,
+		select {
+			border-bottom: 2px solid #7A7A7A;
+		}
+
+		input::placeholder,
+		textarea::placeholder {
+			font-size: 95%;
+		}
+
+		input:hover,
+		textarea:hover,
+		select:hover {
+			border-bottom-color: #000000;
+		}
+
+		input:required,
+		textarea:required,
+		select:required {
+			border-bottom-color: Crimson;
+		}
+
+		input:optional,
+		textarea:optional,
+		select:optional {
+			border-bottom-color: LimeGreen;
+		}
+
+		input:required::placeholder,
+		textarea:required::placeholder {
+			color: IndianRed;
+		}
+
+		input:optional::placeholder,
+		textarea:optional::placeholder {
+			color: SeaGreen;
+		}
+
+		input:invalid,
+		textarea:invalid,
+		select:invalid {
+			background-color: LightPink;
+		}
+
+		input:valid,
+		textarea:valid,
+		select:valid {
+			background-color: LightGreen;
+		}
+
+		input:read-only {
+			background-color: Ivory;
+		}
+
+		input[type="text"]:-moz-read-only {
+			background-color: Ivory;
+		}
+
+		input:disabled {
+			background-color: DarkGray;
+			border-bottom-color: DarkGray;
+		}
+
+		input:disabled::placeholder {
+			color: Silver;
+		}
+
+		/*Columnas*/
+	</style>
+</head>
+
+<body>
+	<div id="contenedor">
+
 		<h1>Validación de formularios</h1>
-			<form action="http://www.agp.gal/resposta.php" method="POST" novalidate id="formularioFacil">
-				<div id="col1">
-					<label for="idade">Idade</label><input type="number" min="21" max="49" id="idade" name="idade" placeholder="Idade en anos" title="Idade en anos" required /><span class="error"></span><br/>
-					<label for="estatura">Estatura</label><input type="number" min="0" max="3" step="0.01" id="estatura" name="estatura" placeholder="Estatura en metros" title="Estatura en metros" required /><span class="error"></span><br/>
-					<label for="datanacemento">Data de nacemento</label><input  type="date" id="datanacemento" name="datanacemento" placeholder="Data de nacemento" title="Data de nacemento" required /><span class="error"></span><br/>					
-					<label for="empregadosacargo">Nº empregados a cargo</label><input type="number" step="1" max="10" min="0" id="empregadosacargo" name="empregadosacargo" placeholder="Número de empregados a cargo" title="Número de empregados a cargo" required /><span class="error"></span><br/> 
-					<label for="descricion">Descrición</label><textarea id="descricion" name="descricion" placeholder="Algo sobre o empregado" title="Algo sobre o empregado" minlength="10" maxlength="280" required></textarea><span class="error"></span><br/>
-					<label for="coches">Coches que ten</label><select id="coche" name="coche[]" title="Elixe que coches tes" required>
-						<option value="">----------</option>
-						<option value="Ningun">Ningún</option>
-						<option value="Alfa">Alfa</option>
-						<option value="Audi">Audi</option>
-						<option value="BMW">BMW</option>
-						<option value="Citroën">Citroën</option>
-						<option value="Dacia">Dacia</option>
-						<option value="Fiat">Fiat</option>
-						<option value="Ford">Ford</option>
-						<option value="Honda">Honda</option>
-						<option value="Kia">Kia</option>
-						<option value="Mercedes">Mercedes</option>
-						<option value="Mitsubishi">Mitsubishi</option>
-						<option value="Renault">Renault</option>
-						<option value="Seat">Seat</option>
-						<option value="Skoda">Skoda</option>
-						<option value="Toyota">Toyota</option>
-						<option value="Volkswagen">Volkswagen</option>						
-					</select><span class="error"></span><br/>					
-					<label>Afeccións que tes</label><span class="error" id="errorAficiones"></span><br/><!-- Se poñemos required temos que marcalo, pero non estaría ben -->
-					<label class="check" for="afeccion1"><span>Deporte</span> <input required type="checkbox" id="afeccion1" name="afeccion[]" value="deporte" title="Elixe afeccións"></label><br/>
-					<label class="check" for="afeccion2"><span>Música</span> <input type="checkbox" id="afeccion2" name="afeccion[]" value="musica" title="Elixe afeccións"></label><br/>
-					<label class="check" for="afeccion3"><span>Lectura</span> <input type="checkbox" id="afeccion3" name="afeccion[]" value="lectura" title="Elixe afeccións"></label><br/>
-					<label class="check" for="afeccion4"><span>Desbroce</span> <input type="checkbox" id="afeccion4" name="afeccion[]" value="desbroce" title="Elixe afeccións"></label><br/>
-					<label class="check" for="afeccion5"><span>Tomar cervexas</span> <input type="checkbox" id="afeccion5" name="afeccion[]" value="tomar cervexas" title="Elixe afeccións"></label><br/>
-					<label class="check" for="afeccion6"><span>Contacontos</span> <input type="checkbox" id="afeccion6" name="afeccion[]" value="contacontos" title="Elixe afeccións"></label><br/>
-					<label for="nombre">Nombre</label><input type="text" id="nombre" name="nombre" placeholder="Nombre" title="Nombre" required /><span class="error"></span><br/>
-					<label for="apellidos">Apellidos</label><input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" title="Apellidos" required /><span class="error"></span><br/>
-					<label for="telefono">Telefono</label><input type="text" id="telefono" name="telefono" placeholder="Telefono" title="Apellidos" required /><span class="error"></span><br/>				
-					<label>Tipo de contrato</label><span class="error" id="errorContratos"></span><br/>
-					<input type="radio" id="becario" name="contrato" value="becario" title="Elixe contrato" required/><label style="vertical-align: baseline;" for="becario">Becario</label><br/>
-					<input type="radio" id="practicas" name="contrato" value="practicas" title="Elixe contrato"/><label style="vertical-align: baseline;" for="practicas">Practicas</label><br/>
-					<input type="radio" id="tiempodefinido" name="contrato" value="tiempodefinido" title="Elixe contrato"/><label style="vertical-align: baseline;" for="tiempodefinido">Contrato por tiempo definido</label><br/>
-					<input type="radio" id="indefinido" name="contrato" value="indefinido" title="Elixe contrato"/><label style="vertical-align: baseline;" for="indefinido">Contrato indefinido</label><br/>							
-				</div>				
-                <div style="clear:both;">	</div>						
-				<input type="reset" value="Borrar" />
-				<input type="submit" formnovalidate="formnovalidate" value="Gardar">
-				<input type="submit" value="Enviar"/>				
-		
-			</form>
-		</div>
-            
-			
-			
-    </body>
+		<form action="http://www.agp.gal/resposta.php" method="POST" novalidate id="formularioFacil">
+			<div id="col1">
+				<label for="idade">Idade</label><input type="number" min="21" max="49" id="idade" name="idade" placeholder="Idade en anos" title="Idade en anos" required /><span class="error"></span><br />
+				<label for="estatura">Estatura</label><input type="number" min="0" max="3" step="0.01" id="estatura" name="estatura" placeholder="Estatura en metros" title="Estatura en metros" required /><span class="error"></span><br />
+				<label for="datanacemento">Data de nacemento</label><input type="date" id="datanacemento" name="datanacemento" placeholder="Data de nacemento" title="Data de nacemento" required /><span class="error"></span><br />
+				<label for="empregadosacargo">Nº empregados a cargo</label><input type="number" step="1" max="10" min="0" id="empregadosacargo" name="empregadosacargo" placeholder="Número de empregados a cargo" title="Número de empregados a cargo"
+					required /><span class="error"></span><br />
+				<label for="descricion">Descrición</label><textarea id="descricion" name="descricion" placeholder="Algo sobre o empregado" title="Algo sobre o empregado" minlength="10" maxlength="280" required></textarea><span class="error"></span><br />
+				<label for="coches">Coches que ten</label><select id="coche" name="coche[]" title="Elixe que coches tes" required>
+					<option value="">----------</option>
+					<option value="Ningun">Ningún</option>
+					<option value="Alfa">Alfa</option>
+					<option value="Audi">Audi</option>
+					<option value="BMW">BMW</option>
+					<option value="Citroën">Citroën</option>
+					<option value="Dacia">Dacia</option>
+					<option value="Fiat">Fiat</option>
+					<option value="Ford">Ford</option>
+					<option value="Honda">Honda</option>
+					<option value="Kia">Kia</option>
+					<option value="Mercedes">Mercedes</option>
+					<option value="Mitsubishi">Mitsubishi</option>
+					<option value="Renault">Renault</option>
+					<option value="Seat">Seat</option>
+					<option value="Skoda">Skoda</option>
+					<option value="Toyota">Toyota</option>
+					<option value="Volkswagen">Volkswagen</option>
+				</select><span class="error"></span><br />
+				<label>Afeccións que tes</label><span class="error" id="errorAficiones"></span><br /><!-- Se poñemos required temos que marcalo, pero non estaría ben -->
+				<label class="check" for="afeccion1"><span>Deporte</span> <input required type="checkbox" id="afeccion1" name="afeccion[]" value="deporte" title="Elixe afeccións"></label><br />
+				<label class="check" for="afeccion2"><span>Música</span> <input type="checkbox" id="afeccion2" name="afeccion[]" value="musica" title="Elixe afeccións"></label><br />
+				<label class="check" for="afeccion3"><span>Lectura</span> <input type="checkbox" id="afeccion3" name="afeccion[]" value="lectura" title="Elixe afeccións"></label><br />
+				<label class="check" for="afeccion4"><span>Desbroce</span> <input type="checkbox" id="afeccion4" name="afeccion[]" value="desbroce" title="Elixe afeccións"></label><br />
+				<label class="check" for="afeccion5"><span>Tomar cervexas</span> <input type="checkbox" id="afeccion5" name="afeccion[]" value="tomar cervexas" title="Elixe afeccións"></label><br />
+				<label class="check" for="afeccion6"><span>Contacontos</span> <input type="checkbox" id="afeccion6" name="afeccion[]" value="contacontos" title="Elixe afeccións"></label><br />
+				<label for="nombre">Nombre</label><input type="text" id="nombre" name="nombre" placeholder="Nombre" title="Nombre" required /><span class="error"></span><br />
+				<label for="apellidos">Apellidos</label><input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" title="Apellidos" required /><span class="error"></span><br />
+				<label for="telefono">Telefono</label><input type="text" id="telefono" name="telefono" placeholder="Telefono" title="Apellidos" required /><span class="error"></span><br />
+				<label>Tipo de contrato</label><span class="error" id="errorContratos"></span><br />
+				<input type="radio" id="becario" name="contrato" value="becario" title="Elixe contrato" required /><label style="vertical-align: baseline;" for="becario">Becario</label><br />
+				<input type="radio" id="practicas" name="contrato" value="practicas" title="Elixe contrato" /><label style="vertical-align: baseline;" for="practicas">Practicas</label><br />
+				<input type="radio" id="tiempodefinido" name="contrato" value="tiempodefinido" title="Elixe contrato" /><label style="vertical-align: baseline;" for="tiempodefinido">Contrato por tiempo definido</label><br />
+				<input type="radio" id="indefinido" name="contrato" value="indefinido" title="Elixe contrato" /><label style="vertical-align: baseline;" for="indefinido">Contrato indefinido</label><br />
+			</div>
+			<div style="clear:both;"> </div>
+			<input type="reset" value="Borrar" />
+			<input type="submit" formnovalidate="formnovalidate" value="Gardar">
+			<input type="submit" value="Enviar" />
+
+		</form>
+	</div>
+
+
+
+</body>
+
 </html>
-
-
-
-
-
-
-
-
-
-
-
