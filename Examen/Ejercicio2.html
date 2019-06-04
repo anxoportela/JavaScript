@@ -9,13 +9,14 @@
 </head>
 
 <body>
-  <script>
+  <script type="text/javascript">
     const texto = prompt('Introduce texto con espacios');
     const palabras = texto.split(' ');
     const cadena = [];
     for (let i = 0; i < palabras.length; i++) {
-      const tamano = palabras[i].length - 1;
-      cadena.push(palabras[i].substring(0, tamano) + palabras[i].slice(-1).toUpperCase());
+      const posicionFinal = palabras[i].length - 1;
+      cadena.push(palabras[i].substring(0, posicionFinal) +
+      palabras[i].slice(-1).toUpperCase());
     }
     const resultado = cadena.join(' ');
     alert(resultado);
