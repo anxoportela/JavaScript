@@ -33,7 +33,8 @@ function validarFormulario(event) {
     const errorEdad = campoEdad.nextElementSibling;
 
     if (isNaN(edadAValidar) || edadAValidar>=50 || edadAValidar<=20) {
-      errorEdad.innerHTML='La edad tiene que estar comprendida entre 21 y 49 años';
+      errorEdad.innerHTML='La edad tiene que estar comprendida entre ' +
+      '21 y 49 años';
       hayErrores=true;
     }
     // ************* Fin edad **************
@@ -54,7 +55,8 @@ function validarFormulario(event) {
     const empleadosAValidar = campoEmpleados.value;
     const errorEmpleados = campoEmpleados.nextElementSibling;
 
-    if (isNaN(empleadosAValidar) || empleadosAValidar<1 || empleadosAValidar>10) {
+    if (isNaN(empleadosAValidar) || empleadosAValidar<1 ||
+    empleadosAValidar>10) {
       errorEmpleados.innerHTML='Los empleados deben ser entre 1 y 10';
       hayErrores=true;
     }
@@ -86,7 +88,8 @@ function validarFormulario(event) {
     const errorDescripcion = campoDescripcion.nextElementSibling;
 
     if (descripcionAValidar.length<50 || descripcionAValidar.length>200) {
-      errorDescripcion.innerHTML='La descripción tiene que tener entre 50 y 200 caracteres';
+      errorDescripcion.innerHTML='La descripción tiene que tener ' +
+      'entre 50 y 200 caracteres';
       hayErrores=true;
     }
     // ************ Fin descricion *************
