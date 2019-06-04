@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script type="text/javascript">
+    const numero = Math.round(Math.random() * 100);
+    let num;
+    fallos = 0;
+    while ((num < 1 || num > 100) || (isNaN(num) == true)) {
+      const num = prompt('Introduce un número entre 1-100', '1-100');
+      if (isNaN(num) == true) {
+        fallos +=1;
+        alert('Debes introducir un número');
+      } else if (num < 1 || num > 100) {
+        fallos +=1;
+        alert('El número introducidos debe estar entre 1 y 100');
+      } else if (fallos >= 10) {
+        alert('Has agotado todos tus intentos, el número que debías adivinar es: ' + numero);
+        break;
+      } else {
+        if (num < numero) {
+          fallos +=1;
+          alert('Inténtalo con un número mayor');
+        } else if (num > numero) {
+          fallos +=1;
+          alert('Inténtalo con un número menor');
+        } else {
+          alert('Enhorabuena has acertado');
+          break;
+        }
+      }
+    }
+    console.log(numero);
+  </script>
+</body>
+
+</html>

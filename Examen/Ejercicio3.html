@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+  const precios = [12, 27, 34, 62, 11, 15, 17, 42, 90];
+  const suma = precios.reduce(function(a, b) {
+    return a + b;
+  }, 0);
+  const media = suma / precios.length;
+  for (i=0; i<precios.length; i++) {
+    if (precios[i]<=media) {
+      console.log(precios[i]);
+    }
+  }
+  </script>
+
+  
+</body>
+</html>
