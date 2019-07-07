@@ -1,32 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-</head>
-
-<body>
-  <script type="text/javascript">
-    const opcionesDia = {
-      weekday: 'long',
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric',
-    };
-    for (i = 1; i <= 30; i++) {
-      const fecha = new Date();
-      fecha.setFullYear(2019, 5, i);
-      const fechadia = fecha.getDay();
-      if (fechadia == 1) {
-        const fechaLunes = new Date(2019, 5, i);
-        const fechaEs = fechaLunes.toLocaleDateString('es-ES', opcionesDia);
-        document.body.innerHTML += fechaEs + '<br />';
+  <body>
+    <script type="text/javascript">
+      const opcionesDia = {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+      };
+      for (i = 1; i <= 30; i++) {
+        const fecha = new Date();
+        fecha.setFullYear(2019, 5, i);
+        const fechadia = fecha.getDay();
+        if (fechadia == 1) {
+          const fechaLunes = new Date(2019, 5, i);
+          const fechaEs = fechaLunes.toLocaleDateString('es-ES', opcionesDia);
+          document.body.innerHTML += fechaEs + '<br />';
+        }
       }
-    }
-  </script>
-</body>
-
+    </script>
+  </body>
 </html>

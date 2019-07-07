@@ -1,42 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-</head>
-
-<body>
-  <script type="text/javascript">
-    const diasSemana = ['Martes', 'Mércores', 'Xoves', 'Venres', 'Sábado'];
-    diasSemana.unshift('Luns');
-    diasSemana.push('Domingo');
-    let tabla = '<table border="1"><tr>';
-    for (let i = 0; i < diasSemana.length; i++) {
-      tabla += '<th>' + diasSemana[i] + '</th>';
-    }
-    tabla += '</tr>';
-    const fecha = new Date();
-    const ano = fecha.getFullYear();
-    const mes = fecha.getMonth();
-    const dias = new Date(ano, mes + 1, 0).getDate();
-    const diasemana = new Date(ano, mes, 1).getDay() + 7 % 7;
-    vacias = 0;
-    tabla += '<tr>';
-    for (let i = 1; i <= 42; i++) {
-      if (i >= diasemana && i <= dias + vacias) {
-        tabla += '<td>' + (i - diasemana + 1) + '</td>';
-      } else if (i <= dias + vacias) {
-        vacias += 1;
-        tabla += '<td></td>';
+  <body>
+    <script type="text/javascript">
+      var diasSemana = ['Martes', 'Mércores', 'Xoves', 'Venres', 'Sábado'];
+      diasSemana.unshift('Luns');
+      diasSemana.push('Domingo');
+      var tabla = '<table border="1"><tr>';
+      for (var i = 0; i < diasSemana.length; i++) {
+        tabla += '<th>' + diasSemana[i] + '</th>';
       }
-      if (i % 7 === 0) tabla += '</tr>';
-    }
-    tabla += '</table>';
-    document.body.innerHTML = tabla;
-  </script>
-</body>
-
+      tabla += '</tr>';
+      var fecha = new Date();
+      var ano = fecha.getFullYear();
+      var mes = fecha.getMonth();
+      var dias = new Date(ano, mes + 1, 0).getDate();
+      var diasemana = new Date(ano, mes, 1).getDay() + (7 % 7);
+      var vacias = 0;
+      tabla += '<tr>';
+      for (i = 1; i <= 42; i++) {
+        if (i >= diasemana && i <= dias + vacias) {
+          tabla += '<td>' + (i - diasemana + 1) + '</td>';
+        } else if (i <= dias + vacias) {
+          vacias += 1;
+          tabla += '<td></td>';
+        }
+        if (i % 7 === 0) tabla += '</tr>';
+      }
+      tabla += '</table>';
+      document.body.innerHTML = tabla;
+    </script>
+  </body>
 </html>
